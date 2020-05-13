@@ -18,4 +18,8 @@ app.get('/cats_and_dogs', (req, res) => {
     res.send('living together');
 })
 
+app.get('/greet/:user', (req, res) => {
+    res.send(`Hello, ${req.params.user}!`);
+})
+
 app.listen(PORT);
