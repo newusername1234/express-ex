@@ -6,4 +6,16 @@ app.get('/', (req, res) => {
     res.send('hello world');
 })
 
+app.get('/cats', (req, res) => {
+    res.send('meow');
+})
+
+app.get('/dogs', (req, res) => {
+    res.send('woof');
+})
+
+app.get('/cats_and_dogs', (req, res) => {
+    res.send('living together');
+})
+
 app.listen(PORT);
