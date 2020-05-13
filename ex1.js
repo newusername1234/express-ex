@@ -30,12 +30,12 @@ app.get('/', (req, res) => {
     }
 })
 
-app.get('/legal/:page', (req, res) => {
+app.get('/legal', (req, res) => {
     // console.log(req.params);
     res.send(header + legal + footer)
 })
 
-app.get('/about/:page', (req, res) => {
+app.get('/about', (req, res) => {
     // console.log(req.params);
     res.send(header + about + footer)
 })

@@ -22,4 +22,11 @@ app.get('/greet/:user', (req, res) => {
     res.send(`Hello, ${req.params.user}!`);
 })
 
+app.get('/hello1', (req, res) => {
+    const name = req.query.name || 'world';
+    const age = req.query.age;
+    const birthyear = 2020 - Number(age);
+    res.send(birthyear ? `Hello, ${name}!<br>You were born in ${birthyear}` : `Hello, ${name}!<br>Tell me how old you are!`);
+})
+
 app.listen(PORT);

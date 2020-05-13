@@ -43,8 +43,8 @@ module.exports = {
                     type:"dog"
                 }        
         ],
-    header: `<h1>LOOK AT THIS HEADER</h1>`,
-    legal: `<h2>legal stuff</h2><br><a href='/about'>about</a>`,
-    about: `<h2>about stuff</h2><br><a href='/legal'>legal</a>`,
+    header: `<ul><li><a href='/about'>ABOUT</a></li><li><a href='/legal'>LEGAL</a></li></ul>`,
+    legal: `<h2>legal stuff lorema;skjdfhf;asksenf;laewkng;oaeignae;ogn</h2>`,
+    about: `<h2>about stuffjskdl;fj;aowiejf;o;eijjfo;ieijfo;aif;kd;oehgodgnkdf;ja;lksejfioejf</h2>`,
     footer: `<h1>LOOK AT THIS FOOTER</h1>`,
 }
