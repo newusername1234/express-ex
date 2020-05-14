@@ -2,9 +2,16 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
+function logger(req, res, next) {
+    console.log(Object.keys(req.query).length > 0 ? req.query : 'No queries');
+    next();
+}
+
 app.get('/', (req, res) => {
     res.send('hello world');
 })
+app.use(express.static('public'));
+app.use(logger);
 
 app.get('/cats', (req, res) => {
     res.send('meow');
